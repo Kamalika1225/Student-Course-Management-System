@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard · Card Catalog</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="admin-dashboard">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <a href="index.html" class="brand">
+          <span class="mark">SCMS</span>
+          <span class="name">Card Catalog</span>
+        </a>
+        <span class="tagline">STUDENT COURSE MANAGEMENT &amp; PROGRESS LEDGER</span>
+      </div>
+      <nav id="site-nav" aria-label="Primary"></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <span class="page-eyebrow">Module 6 &middot; Dashboard</span>
+      <h1>Registrar overview</h1>
+      <p>A snapshot of students, courses, and enrollment activity across the catalog.</p>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-card"><div class="value" id="stat-students">0</div><div class="label">Total Students</div></div>
+      <div class="stat-card"><div class="value" id="stat-courses">0</div><div class="label">Total Courses</div></div>
+      <div class="stat-card"><div class="value" id="stat-enrollments">0</div><div class="label">Active Enrollments</div></div>
+      <div class="stat-card"><div class="value" id="stat-completion">0%</div><div class="label">Avg. Completion</div></div>
+    </div>
+
+    <div class="section-heading">
+      <h2>Manage the Catalog</h2>
+      <div class="hero-actions">
+        <a class="btn-ghost small" href="courses.html">View All Courses</a>
+        <a class="btn small" href="add-course.html">+ Add Course</a>
+      </div>
+    </div>
+
+    <div class="section-heading"><h2>Recent Enrollments</h2></div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Student</th><th>Course</th><th>Enrolled</th><th>Progress</th></tr>
+        </thead>
+        <tbody id="recent-enrollments"></tbody>
+      </table>
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Card Catalog &mdash; Student Course Management &amp; Learning Progress Tracking System</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Course · Card Catalog</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="add-course">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <a href="index.html" class="brand">
+          <span class="mark">SCMS</span>
+          <span class="name">Card Catalog</span>
+        </a>
+        <span class="tagline">STUDENT COURSE MANAGEMENT &amp; PROGRESS LEDGER</span>
+      </div>
+      <nav id="site-nav" aria-label="Primary"></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header narrow">
+      <span class="page-eyebrow">Module 2 &middot; Course Management</span>
+      <h1>Add a course</h1>
+      <p>New entries appear in the catalog immediately.</p>
+    </div>
+    <div class="card-form narrow">
+      <form id="course-form">
+        <div class="field">
+          <label for="name">Course name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="code">Course code</label>
+            <input id="code" name="code" type="text" placeholder="e.g. WEB-201" required>
+          </div>
+          <div class="field">
+            <label for="duration">Duration (weeks)</label>
+            <input id="duration" name="duration" type="number" min="1" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="instructor">Instructor</label>
+          <input id="instructor" name="instructor" type="text" required>
+        </div>
+        <div class="field">
+          <label for="category">Category</label>
+          <input id="category" name="category" type="text" placeholder="e.g. Web Development" required>
+        </div>
+        <div class="field">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+        <div class="field">
+          <label for="modules">Modules (comma separated)</label>
+          <textarea id="modules" name="modules" placeholder="Intro, Core Concepts, Final Project" required></textarea>
+        </div>
+        <div id="form-message" class="form-message" hidden></div>
+        <button type="submit" class="btn btn-full">Add Course</button>
+        <p class="form-footnote"><a href="courses.html">Cancel and return to catalog</a></p>
+      </form>
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Card Catalog &mdash; Student Course Management &amp; Learning Progress Tracking System</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

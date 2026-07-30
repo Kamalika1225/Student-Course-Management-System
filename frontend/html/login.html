@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In · Card Catalog</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="login">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <a href="index.html" class="brand">
+          <span class="mark">SCMS</span>
+          <span class="name">Card Catalog</span>
+        </a>
+        <span class="tagline">STUDENT COURSE MANAGEMENT &amp; PROGRESS LEDGER</span>
+      </div>
+      <nav id="site-nav" aria-label="Primary"></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header narrow">
+      <span class="page-eyebrow">Module 1 &middot; User Authentication</span>
+      <h1>Log in to your ledger</h1>
+      <p>Students and administrators sign in from the same desk.</p>
+    </div>
+    <div class="card-form narrow">
+      <div class="login-tabs">
+        <button type="button" class="login-tab active" data-role="student">Student</button>
+        <button type="button" class="login-tab" data-role="admin">Administrator</button>
+      </div>
+
+      <form id="student-login-form">
+        <div class="field">
+          <label for="student-email">Email</label>
+          <input id="student-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="student-password">Password</label>
+          <input id="student-password" name="password" type="password" autocomplete="current-password" required>
+        </div>
+        <p class="form-footnote"><a href="forgot-password.html">Forgot your password?</a></p>
+        <div id="form-message" class="form-message" hidden></div>
+        <button type="submit" class="btn btn-full">Log In as Student</button>
+        <p class="form-footnote">New here? <a href="register.html">Create an account</a>.</p>
+      </form>
+
+      <form id="admin-login-form" hidden>
+        <div class="field">
+          <label for="admin-email">Admin email</label>
+          <input id="admin-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="admin-password">Password</label>
+          <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="btn btn-full">Log In as Administrator</button>
+        <p class="form-footnote">Demo credentials: admin@campus.edu / admin123</p>
+      </form>
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Card Catalog &mdash; Student Course Management &amp; Learning Progress Tracking System</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

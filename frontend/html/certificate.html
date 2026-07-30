@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate · Card Catalog</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="certificate">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <a href="index.html" class="brand">
+          <span class="mark">SCMS</span>
+          <span class="name">Card Catalog</span>
+        </a>
+        <span class="tagline">STUDENT COURSE MANAGEMENT &amp; PROGRESS LEDGER</span>
+      </div>
+      <nav id="site-nav" aria-label="Primary"></nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="certificate-container" class="narrow">
+      <div class="certificate">
+        <span class="eyebrow">Card Catalog &middot; Registrar's Office</span>
+        <h2>Certificate of Completion</h2>
+        <p>This certifies that</p>
+        <div class="student-name" id="cert-student-name"></div>
+        <p>has successfully completed</p>
+        <p style="font-family:var(--font-display); font-size:1.3rem;" id="cert-course-name"></p>
+        <div class="seal">OFFICIAL<br>SEAL</div>
+        <p class="muted small" style="margin-top:20px;">Issued <span id="cert-date"></span></p>
+      </div>
+      <div class="hero-actions" style="margin-top:20px; justify-content:center;">
+        <button id="print-btn" class="btn">Print Certificate</button>
+      </div>
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Card Catalog &mdash; Student Course Management &amp; Learning Progress Tracking System</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>

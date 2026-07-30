@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details · Card Catalog</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="course-details">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <a href="index.html" class="brand">
+          <span class="mark">SCMS</span>
+          <span class="name">Card Catalog</span>
+        </a>
+        <span class="tagline">STUDENT COURSE MANAGEMENT &amp; PROGRESS LEDGER</span>
+      </div>
+      <nav id="site-nav" aria-label="Primary"></nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="course-details-container">
+      <div class="page-header">
+        <span class="page-eyebrow"><span id="course-code"></span> &middot; <span id="course-category"></span></span>
+        <h1 id="course-name"></h1>
+        <p id="course-description"></p>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card"><div class="value mono" id="course-instructor" style="font-size:1.1rem;"></div><div class="label">Instructor</div></div>
+        <div class="stat-card"><div class="value mono" id="course-duration" style="font-size:1.1rem;"></div><div class="label">Duration</div></div>
+      </div>
+
+      <div class="section-heading"><h2>Modules</h2></div>
+      <ul id="course-module-list"></ul>
+
+      <div style="margin-top:28px;">
+        <div id="form-message" class="form-message" hidden></div>
+        <button id="enroll-btn" class="btn">Enroll in Course</button>
+      </div>
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Card Catalog &mdash; Student Course Management &amp; Learning Progress Tracking System</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+
+</body>
+</html>
